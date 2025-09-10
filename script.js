@@ -1,7 +1,3 @@
-import { firebase } from './firebaseConfig.js';
-const { auth, db, storage } = firebase.initialize();
-const L = firebase.libs;
-
 // ---------- DARK / LIGHT THEME ----------
 const themeToggle = document.getElementById('themeToggle');
 
@@ -223,3 +219,7 @@ specialsForm.addEventListener('submit', async (e)=>{
     specialsMsg.textContent = err.message;
   }
 });
+
+import { firebase } from './firebaseConfig.js';
+const { auth, db, storage } = firebase.initialize();
+const L = firebase.libs;
